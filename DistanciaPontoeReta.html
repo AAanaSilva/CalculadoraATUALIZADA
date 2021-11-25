@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraAnaSilva</title>
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/distanciapontoereta.css">
+</head>
+<body>
+    
+    <nav>
+
+        <a href="index.html">Clássica</a>
+        <a href="EquacoesDoisPontos.html">Equações Dois Pontos</a>
+        <a href="DistanciaPontoeReta.html" class="selecionada">Distancia entre Ponto e Reta</a>
+        <a href="EquacaoReduzida.html">Equação Reduzida</a>
+        <a href="PosicaoRelativadasRetas.html"> Posição Relativa das Retas</a>
+        
+    </nav>
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display" />
+        <div class="pontos"> 
+
+            <label>Ponto A</label>
+            <div><span>X:</span><input type="number" class="ponto" id="xA"></div>
+            <div><span>Y:</span><input type="number" class="ponto" id="yA"></div>
+            
+    </div>
+        
+    <div class="equacao">
+
+        <label>Equação</label>
+            <div><span>a:</span><input type="number" class="ponto" id="a"></div>
+            <div><span>b:</span><input type="number" class="ponto" id="d"></div>
+            <div><span>c:</span><input type="number" class="ponto" id="c"></div>
+
+    </div>
+
+    <div class="calculares">
+        <button onclick="limpar()">LIMPAR</button>
+        <button onclick="calculardistanciapontoereta()">Calcular Distancia de Ponto e Reta</button>
+    </div>
+
+</body>
+</html>
